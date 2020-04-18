@@ -1,17 +1,13 @@
 <div class="container">
-  <form [formGroup] = "miFormulario">
-    Usuario: <input 
-    [class.is-invalid]="miFormulario.get('username').touched && miFormulario.get('username').invalid"
-    type="text" 
-    class="form-control" 
-    formControlName = "username"><br/>
-    Password: <input 
-    
-    [class.is-invalid]="miFormulario.get('userpassword').touched && miFormulario.get('userpassword').invalid"
-    type="password" 
-    class="form-control" 
-    formControlName = "userpassword"><br/>
-      <button class="btn btn-primary" type="submit">Enviar</button>
-  </form>
-  {{ miFormulario.value | json}}
+
+
+
+  <app-mensaje>
+    <h1>Hola mundo</h1>
+    <button class="btn btn-primary">Hazme Click</button>
+    <div>este es un div</div>
+    <p>Mensaje dede el componente App</p>
+  </app-mensaje>
+
+
 </div>
